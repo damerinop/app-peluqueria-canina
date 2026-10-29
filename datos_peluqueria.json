@@ -1,0 +1,149 @@
+{
+  "servicios": [
+    { "id": 1, "descripcion": "Baño" },
+    { "id": 2, "descripcion": "Baño y retoque" },
+    { "id": 3, "descripcion": "Peluquería" }
+  ],
+  "citas": [
+    { "id": 1, "fecha": "2026-05-20", "hora": "12:00:00", "mascota_id": 1, "servicio_id": 1, "trabajador_id": 1 },
+    { "id": 2, "fecha": "2026-05-20", "hora": "13:00:00", "mascota_id": 1, "servicio_id": 3, "trabajador_id": 1 },
+    { "id": 3, "fecha": "2026-05-20", "hora": "15:00:00", "mascota_id": 2, "servicio_id": 2, "trabajador_id": 2 },
+    { "id": 4, "fecha": "2026-05-20", "hora": "17:00:00", "mascota_id": 3, "servicio_id": 2, "trabajador_id": 2 },
+    { "id": 5, "fecha": "2026-05-21", "hora": "11:30:00", "mascota_id": 4, "servicio_id": 2, "trabajador_id": 3 },
+    { "id": 6, "fecha": "2026-05-20", "hora": "15:00:00", "mascota_id": 2, "servicio_id": 2, "trabajador_id": 3 },
+    { "id": 7, "fecha": "2026-05-20", "hora": "15:00:00", "mascota_id": 2, "servicio_id": 2, "trabajador_id": 1 }
+  ],
+  "detalle_asistencia": [
+    { "id": 1, "cita_id": 1, "observaciones": null, "pago_id": 1 },
+    { "id": 2, "cita_id": 2, "observaciones": null, "pago_id": 2 },
+    { "id": 3, "cita_id": 3, "observaciones": null, "pago_id": 3 },
+    { "id": 4, "cita_id": 4, "observaciones": "Tutor dejó bolsa de transporte para la mascota", "pago_id": 4 },
+    { "id": 5, "cita_id": 5, "observaciones": null, "pago_id": 5 }
+  ],
+  "acabado": [
+    { "id": 1, "descripcion": "Special 021: Texturizador" },
+    { "id": 2, "descripcion": "X-Treme Shine: Brillo" },
+    { "id": 3, "descripcion": "Total Glow: Antiestático" },
+    { "id": 4, "descripcion": "Hair Volume: En seco" },
+    { "id": 5, "descripcion": "Mousse Xpand: En húmedo" },
+    { "id": 6, "descripcion": "Argan Serum: Reparador" },
+    { "id": 7, "descripcion": "Fit Ends: Anti encrespamiento" }
+  ],
+  "alzador": [
+    { "id": 1, "descripcion": "1/8\"" },
+    { "id": 2, "descripcion": "1/4\"" },
+    { "id": 3, "descripcion": "3/8\"" },
+    { "id": 4, "descripcion": "1/2\"" },
+    { "id": 5, "descripcion": "5/8\"" },
+    { "id": 6, "descripcion": "3/4\"" },
+    { "id": 7, "descripcion": "7/8\"" },
+    { "id": 8, "descripcion": "1\"" }
+  ],
+  "cuchilla": [
+    { "id": 1, "descripcion": "40" },
+    { "id": 2, "descripcion": "30" },
+    { "id": 3, "descripcion": "10" },
+    { "id": 4, "descripcion": "7f" },
+    { "id": 5, "descripcion": "5f" },
+    { "id": 6, "descripcion": "4f" },
+    { "id": 7, "descripcion": "3f" },
+    { "id": 8, "descripcion": "3fc" }
+  ],
+  "detalle_cosmetica": [
+    { "id": 1, "acabado_id": 1, "higiene_especifica_id": 1, "higiene_general_id": 1, "tratamiento_id": 1 },
+    { "id": 2, "acabado_id": 2, "higiene_especifica_id": 2, "higiene_general_id": 2, "tratamiento_id": 2 },
+    { "id": 3, "acabado_id": 3, "higiene_especifica_id": 3, "higiene_general_id": 3, "tratamiento_id": 3 },
+    { "id": 4, "acabado_id": 4, "higiene_especifica_id": 4, "higiene_general_id": 1, "tratamiento_id": 4 },
+    { "id": 5, "acabado_id": 5, "higiene_especifica_id": 5, "higiene_general_id": 2, "tratamiento_id": 1 }
+  ],
+  "detalle_herramienta": [
+    { "id": 1, "mascota_id": 1, "alzador_id": 1, "cuchilla_id": 1, "detalle_cosmetica_id": 1, "fragancia_id": 1 },
+    { "id": 2, "mascota_id": 2, "alzador_id": 2, "cuchilla_id": 2, "detalle_cosmetica_id": 2, "fragancia_id": 2 },
+    { "id": 3, "mascota_id": 3, "alzador_id": 3, "cuchilla_id": 3, "detalle_cosmetica_id": 3, "fragancia_id": 1 },
+    { "id": 4, "mascota_id": 4, "alzador_id": 4, "cuchilla_id": 4, "detalle_cosmetica_id": 4, "fragancia_id": 2 },
+    { "id": 5, "mascota_id": 5, "alzador_id": 5, "cuchilla_id": 5, "detalle_cosmetica_id": 5, "fragancia_id": 1 }
+  ],
+  "fragancia": [
+    { "id": 1, "descripcion": "Colonia" },
+    { "id": 2, "descripcion": "Perfume" }
+  ],
+  "higiene_especifica": [
+    { "id": 1, "descripcion": "Yorky Avocado: Hidratación profunda" },
+    { "id": 2, "descripcion": "Quina Energiser: Estimulante" },
+    { "id": 3, "descripcion": "Extra Volume: Volumen" },
+    { "id": 4, "descripcion": "Kera Argan: Hidratante y reestructurante" },
+    { "id": 5, "descripcion": "Silk: Pieles sensibles" },
+    { "id": 6, "descripcion": "Seaweed: Antiseborréico" },
+    { "id": 7, "descripcion": "Stop Bites: Repelente" },
+    { "id": 8, "descripcion": "Senior Care: Pieles +8 años" },
+    { "id": 9, "descripcion": "CBD Fusion: Nutritivo y revitalizante" },
+    { "id": 10, "descripcion": "Total White: Potenciador de blancos" },
+    { "id": 11, "descripcion": "Multi Color: Potenciador de color" },
+    { "id": 12, "descripcion": "Total Dark: Potenciador de negros" },
+    { "id": 13, "descripcion": "Total Brown: Potenciador de marrones" }
+  ],
+  "higiene_general": [
+    { "id": 1, "descripcion": "Two Phase: Desenredante e hidratante" },
+    { "id": 2, "descripcion": "Kiwi Lover: Limpieza básica" },
+    { "id": 3, "descripcion": "Aloe Lover: Limpieza hidratante" }
+  ],
+  "tratamiento": [
+    { "id": 1, "descripcion": "Bio Protein: Acondicionadora" },
+    { "id": 2, "descripcion": "Kera Argan: Hidratante y estructurante" },
+    { "id": 3, "descripcion": "Nutri Collagen: Regenerante" },
+    { "id": 4, "descripcion": "Tangle Free: Revitalizante" }
+  ],
+  "mascota": [
+    { "id": 1, "antecedentes_medicos": "Problema con la pata izquierda frontal", "caracter": "Juguetona y cariñosa", "estructura": "Pequeña, pelaje largo color blanco y café, orejas caídas", "fecha_de_nacimiento": "2022-05-14", "nombre": "Luna", "peso": 4.8, "tutor_id": 1, "raza_id": 1 },
+    { "id": 2, "antecedentes_medicos": null, "caracter": "Tranquilo y sociable", "estructura": "Compacto, pelaje corto beige, hocico achatado", "fecha_de_nacimiento": "2021-11-02", "nombre": "Rocky", "peso": 12.5, "tutor_id": 1, "raza_id": 5 },
+    { "id": 3, "antecedentes_medicos": null, "caracter": "Activa y alerta", "estructura": "Muy pequeña, pelaje doble capa color naranjo, cola esponjosa", "fecha_de_nacimiento": "2024-01-09", "nombre": "Kira", "peso": 3.1, "tutor_id": 2, "raza_id": 3 },
+    { "id": 4, "antecedentes_medicos": null, "caracter": "Protector y obediente", "estructura": "Grande, pelaje doble capa negro y café, cuerpo robusto", "fecha_de_nacimiento": "2020-07-30", "nombre": "Max", "peso": 28.7, "tutor_id": 2, "raza_id": 9 },
+    { "id": 5, "antecedentes_medicos": null, "caracter": "Dulce y tranquila", "estructura": "Pequeña, pelaje largo dorado, cara redondeada", "fecha_de_nacimiento": "2023-03-18", "nombre": "Canela", "peso": 6.4, "tutor_id": 2, "raza_id": 4 },
+    { "id": 6, "antecedentes_medicos": "Problema a la columna", "caracter": "Alegre y amigable", "estructura": "Mediano, pelaje ondulado café claro, orejas largas", "fecha_de_nacimiento": "2021-09-25", "nombre": "Toby", "peso": 9.2, "tutor_id": 3, "raza_id": 7 },
+    { "id": 7, "antecedentes_medicos": null, "caracter": "Inquieta y valiente", "estructura": "Miniatura, pelaje corto color crema, ojos grandes", "fecha_de_nacimiento": "2024-06-11", "nombre": "Mila", "peso": 2.0, "tutor_id": 4, "raza_id": 10 },
+    { "id": 8, "antecedentes_medicos": null, "caracter": "Juguetón y leal", "estructura": "Musculoso, pelaje corto gris, pecho ancho", "fecha_de_nacimiento": "2022-12-01", "nombre": "Bruno", "peso": 11.8, "tutor_id": 4, "raza_id": 6 },
+    { "id": 9, "antecedentes_medicos": null, "caracter": "Curiosa y energética", "estructura": "Pequeña, pelaje largo sedoso color gris y beige", "fecha_de_nacimiento": "2023-08-27", "nombre": "Daisy", "peso": 2.7, "tutor_id": 5, "raza_id": 8 },
+    { "id": 10, "antecedentes_medicos": "Cola fracturada", "caracter": "Inteligente y amistoso", "estructura": "Mediano, pelaje mixto negro con manchas blancas, contextura delgada", "fecha_de_nacimiento": "2021-04-05", "nombre": "Simón", "peso": 15.6, "tutor_id": 5, "raza_id": 2 }
+  ],
+  "raza": [
+    { "id": 1, "nombre": "Poodle", "tamano": "Mediano", "tipo_pelaje": "Rizado" },
+    { "id": 2, "nombre": "Mestizo", "tamano": "Variable", "tipo_pelaje": "Variable" },
+    { "id": 3, "nombre": "Pomerania", "tamano": "Miniatura", "tipo_pelaje": "Doble capa" },
+    { "id": 4, "nombre": "Shih Tzu", "tamano": "Pequeño", "tipo_pelaje": "Largo" },
+    { "id": 5, "nombre": "Pug", "tamano": "Pequeño", "tipo_pelaje": "Corto" },
+    { "id": 6, "nombre": "Bulldog Francés", "tamano": "Pequeño", "tipo_pelaje": "Corto" },
+    { "id": 7, "nombre": "Cocker", "tamano": "Mediano", "tipo_pelaje": "Largo" },
+    { "id": 8, "nombre": "Yorkshire", "tamano": "Miniatura", "tipo_pelaje": "Largo" },
+    { "id": 9, "nombre": "Pastor Alemán", "tamano": "Grande", "tipo_pelaje": "Doble capa" },
+    { "id": 10, "nombre": "Chihuahua", "tamano": "Miniatura", "tipo_pelaje": "Corto" }
+  ],
+  "notificacion": [
+    { "id": 1, "cita_id": 2, "mensaje": "Ya puede retirar a su mascota." },
+    { "id": 2, "cita_id": 4, "mensaje": "Ya puede retirar a su mascota." },
+    { "id": 3, "cita_id": 7, "mensaje": "Ya puede retirar a su mascota." }
+  ],
+  "pago": [
+    { "id": 1, "costo": 10000, "pendiente": false, "tipo_pago": "Transferencia" },
+    { "id": 2, "costo": 15000, "pendiente": false, "tipo_pago": "Tarjeta - Débito" },
+    { "id": 3, "costo": 15000, "pendiente": true, "tipo_pago": "Efectivo" },
+    { "id": 4, "costo": 20000, "pendiente": true, "tipo_pago": "Transferencia" },
+    { "id": 5, "costo": 25000, "pendiente": true, "tipo_pago": "Efectivo" }
+  ],
+  "resenna": [
+    { "id": 1, "asistencia_id": 1, "calificacion": 7, "comentario": "Muy buen servicio." },
+    { "id": 2, "asistencia_id": 2, "calificacion": 5, "comentario": "Estoy conforme." },
+    { "id": 3, "asistencia_id": 3, "calificacion": 7, "comentario": "Mi perrito está feliz." }
+  ],
+  "trabajador": [
+    { "id": 1, "apellido": "Navarro", "celular": 946324771, "correo": "benja.elias.navarro@gmail.com", "domicilio": "San Luis 921, Pudahuel", "nombre": "Benjamín" },
+    { "id": 2, "apellido": "Garay", "celular": 912345678, "correo": "j.p.asencio@gmail.com", "domicilio": "Vigilia 9107", "nombre": "Juan" },
+    { "id": 3, "apellido": "Vera", "celular": 977889070, "correo": "vera.ig@gmail.com", "domicilio": "San Pablo 9917", "nombre": "Ignacio" }
+  ],
+  "tutor": [
+    { "id": 1, "apellido": "Navarro", "celular": 946324771, "correo": "benja.elias.navarro@gmail.com", "domicilio": "San Luis 921, Pudahuel", "nombre": "Benjamín", "numero_opcional": 975522758, "veterinario_de_confianza": "Maximiliano Diaz, numero: 927582557" },
+    { "id": 2, "apellido": "Herrera", "celular": 952367814, "correo": "tomas.herrera@gmail.com", "domicilio": "Avenida Central 455, Ñuñoa", "nombre": "Tomás", "numero_opcional": null, "veterinario_de_confianza": "Felipe Soto, correo: fsoto.vet@gmail.com" },
+    { "id": 3, "apellido": "Castro", "celular": 987654123, "correo": "vale.castro@gmail.com", "domicilio": "Santa Rosa 2210, La Florida", "nombre": "Valentina", "numero_opcional": 976451238, "veterinario_de_confianza": "Daniela Pérez, numero: 998741256" },
+    { "id": 4, "apellido": null, "celular": 934876521, "correo": null, "domicilio": "Arturo Prat 742, Quilicura", "nombre": "David", "numero_opcional": 954321876, "veterinario_de_confianza": "Sebastián Fuentes, correo: sfuentesvet@gmail.com" },
+    { "id": 5, "apellido": "Vega", "celular": 956712348, "correo": "emilia.vega@gmail.com", "domicilio": "Manuel Rodríguez 667, Santiago Centro", "nombre": "Emilia", "numero_opcional": 977845612, "veterinario_de_confianza": "Francisca Molina, numero: 924578963" }
+  ]
+}
