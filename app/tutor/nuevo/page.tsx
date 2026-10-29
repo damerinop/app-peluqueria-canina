@@ -1,6 +1,9 @@
 'use client';
+
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
+// Importamos las funciones de validación (ajusta la ruta '../' según dónde guardes la carpeta utils)
+import { validarTexto, validarCelular, validarEmail } from '../../../utils/validaciones';
 
 export default function NuevoTutorPage() {
   const router = useRouter();
@@ -23,6 +26,28 @@ export default function NuevoTutorPage() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+
+    // 🔍 Validaciones usando las utilidades
+    if (!validarTexto(formData.nombre)) {
+      alert('El campo Nombre es obligatorio.');
+      return;
+    }
+
+    if (!validarCelular(formData.celular)) {
+      alert('Por favor, ingresa un número de celular válido (mínimo 8 dígitos).');
+      return;
+    }
+
+    if (!validarEmail(formData.correo)) {
+      alert('Por favor, ingresa un correo electrónico válido.');
+      return;
+    }
+
+    if (!validarTexto(formData.domicilio)) {
+      alert('El campo Domicilio es obligatorio.');
+      return;
+    }
+
     try {
       const response = await fetch('http://localhost:4000/tutor', {
         method: 'POST',
