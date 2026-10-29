@@ -1,36 +1,91 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🐾 Sistema de Gestión de Peluquería Canina
 
-## Getting Started
+Una aplicación web interactiva construida con **React** y **Next.js (App Router)** para la gestión integral de una peluquería canina (tutores, mascotas, razas, citas, herramientas y servicios de cosmética).
 
-First, run the development server:
+---
+
+## 🛠️ Tecnologías Utilizadas
+
+* **[React](https://react.dev/)**: Biblioteca principal para la creación de interfaces de usuario basadas en componentes interactivos, manejo de estados (`useState`) y efectos de ciclo de vida (`useEffect`).
+* **[Next.js](https://nextjs.org/)**: Framework sobre React que proporciona enrutamiento basado en archivos (App Router), optimizaciones e integración cliente/servidor.
+* **TypeScript / JSX**: Tipado estático y sintaxis declarativa para React.
+* **JSON Server**: API REST simulada que sirve y persiste los datos desde una base de datos local JSON.
+
+---
+
+## 📋 Requisitos Previos
+
+Antes de ejecutar el proyecto, asegúrate de tener instalado:
+* **Node.js** (versión 18.0 o superior recomendada).
+* **npm**, **yarn** o **pnpm** como gestor de paquetes.
+
+---
+
+## 🚀 Pasos para Instalación y Ejecución
+
+Sigue estos pasos para poner en marcha el proyecto en un entorno local:
+
+### 1. Clonar e Instalar Dependencias
+Abre la terminal en la raíz del proyecto y ejecuta:
+
+```bash
+npm install
+```
+
+### 2. Iniciar la API Simulada (`JSON Server`)
+El proyecto consume datos desde `datos_peluqueria.json`. Para iniciar la API REST en el puerto `4000`, abre una terminal y ejecuta:
+
+```bash
+npx json-server --watch datos_peluqueria.json --port 4000
+```
+
+> **Servicios activos:**
+> * Tutores: `http://localhost:4000/tutor`
+> * Mascotas: `http://localhost:4000/mascota`
+> * Razas: `http://localhost:4000/raza`
+> * Citas: `http://localhost:4000/citas`
+
+### 3. Iniciar la Aplicación React / Next.js
+En **otra ventana de la terminal**, ejecuta el servidor de desarrollo de Next.js:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 4. Acceder a la Aplicación
+Abre tu navegador e ingresa a: **`http://localhost:3000`**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📁 Estructura Completa del Proyecto
 
-## Learn More
+```text
+peluqueria-canina/
+├── app/                        # Enrutador principal de Next.js (App Router)
+│   ├── layout.tsx              # Diseño global / Wrapper principal de React
+│   ├── page.tsx                # Página de inicio / Dashboard principal
+│   ├── tutor/                  # Módulo de Tutores
+│   │   ├── page.tsx            # Lista y búsqueda de tutores
+│   │   └── nuevo/
+│   │       └── page.tsx        # Formulario React para registro de tutores
+│   └── mascota/                # Módulo de Mascotas
+│       ├── page.tsx            # Lista de mascotas y detalles
+│       └── nuevo/
+│           └── page.tsx        # Formulario React con relaciones (Tutores y Razas)
+├── components/                 # Componentes reutilizables de React (Botones, Modales, Navbars)
+├── public/                     # Archivos estáticos (imágenes, favicons, fuentes)
+├── datos_peluqueria.json       # Base de datos simulada en formato JSON
+├── package.json                # Dependencias y scripts del proyecto
+├── tsconfig.json               # Configuración de TypeScript
+└── README.md                   # Documentación del proyecto
+```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🧪 Ejecución de Pruebas
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Para validar la lógica y los componentes de React, puedes ejecutar las pruebas mediante:
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+npm run test
+```
